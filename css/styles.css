@@ -188,7 +188,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.hero_button {
+.hero__button {
   display: block;
   margin: auto;
   cursor: pointer;
@@ -213,11 +213,11 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.hero_button:hover,
-.hero_button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: #188ce8;
 }
-.btn-text {
+.hero__text {
   padding: 10px 32px;
 }
 .backdrop {
@@ -245,7 +245,7 @@ ul {
   height: 11px;
   width: 11px;
 } */
-.modal-close {
+.modal__close {
   padding: 0;
   width: 30px;
   height: 30px;
@@ -259,8 +259,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.modal-close:hover,
-.modal-close:focus {
+.modal__close:hover,
+.modal__close:focus {
   fill: var(--accent);
 }
 
@@ -274,22 +274,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-.modal-form-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  position: relative;
-}
-.modal-form-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-.modal-title {
+.form__title {
   text-align: center;
   font-family: "Roboto";
   font-weight: 700;
@@ -299,13 +284,29 @@ ul {
   margin-bottom: 12px;
 }
 
-.form-label {
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.form__label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--secound-text-collor);
 }
-.form-input {
+.form__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
@@ -317,18 +318,18 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.modal-form-field:focus-within > .form-input {
+.form__field:focus-within > .form__input {
   border-color: var(--accent);
   outline: none;
 }
-.modal-form-field:focus-within > .modal-form-icon {
+.form__field:focus-within > .form__icon {
   fill: var(--accent);
 }
-.modal-form-field:focus-within > .modal-textarea {
+.form__field:focus-within > .form__textarea {
   border-color: var(--accent);
   outline: none;
 }
-.modal-textarea {
+.form__textarea {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -351,7 +352,7 @@ textarea::placeholder {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.policy-checkbox {
+.form-checkbox__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,12 +361,13 @@ textarea::placeholder {
   color: var(--secound-text-collor);
   position: relative;
 }
-.contract {
+.form-checkbox__text {
+  cursor: pointer;
   margin-left: 3px;
   color: var(--accent);
   text-decoration: underline;
 }
-.modal-form-checkbox {
+.form-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -373,7 +375,7 @@ textarea::placeholder {
 
   margin-bottom: 30px;
 }
-.modal-check-icon {
+.form-checkbox__icon {
   margin-right: 7px;
   display: inline-block;
   width: 16px;
@@ -381,24 +383,24 @@ textarea::placeholder {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
 }
-.checkbox {
+.form-checkbox__input {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-.checkbox:checked + .modal-check-icon {
+.form-checkbox__input:checked + .form-checkbox__icon {
   border: transparent;
   border-color: var(--accent);
   background-color: var(--accent);
   background-origin: border-box;
 }
-.icon-check {
+.form-checkbox__real-icon {
   position: absolute;
   left: 3px;
 }
 
-.modal-submit {
+.submit__button {
   cursor: pointer;
   margin: 0 auto;
   display: block;
@@ -417,8 +419,8 @@ textarea::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.modal-submit:hover,
-.modal-submit:focus {
+.submit__button:hover,
+.submit__button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
