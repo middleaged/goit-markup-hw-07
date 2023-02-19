@@ -431,13 +431,13 @@ textarea::placeholder {
 .features-list-container {
   display: flex;
 }
-.icon-list-features {
+.feature-pictures {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.icon-item-features {
+.feature-pictures__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,13 +448,13 @@ textarea::placeholder {
   border-radius: 4px;
 }
 
-.feature-list-item {
+.feature__list {
   width: 270px;
 }
-.feature-list-item:not(:last-child) {
+.feature__list:not(:last-child) {
   margin-right: 30px;
 }
-.features-title {
+.features__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -462,7 +462,7 @@ textarea::placeholder {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.features-text {
+.features__text {
   color: var(--secound-text-collor);
   line-height: 1.71;
 }
