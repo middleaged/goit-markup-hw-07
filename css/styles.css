@@ -467,7 +467,7 @@ textarea::placeholder {
   line-height: 1.71;
 }
 /* Проекти */
-.projects-title {
+.projects__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -475,17 +475,17 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.list-container {
+.projects {
   display: flex;
 }
-.list-item:not(:last-child) {
+.projects__image:not(:last-child) {
   margin-right: 30px;
 }
 /* Команда */
 .team {
   background-color: var(--third-background-color);
 }
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -493,7 +493,10 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.teammate-name {
+.team-list {
+  display: flex;
+}
+.team-card__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -501,26 +504,24 @@ textarea::placeholder {
 
   margin-bottom: 10px;
 }
-.teammate-profession {
+.team-card__profession {
   color: var(--secound-text-collor);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   margin-bottom: 16px;
 }
-.team-container {
-  display: flex;
-}
-.team-card {
+
+.team-list__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-background-color);
 }
-.team-card:not(:last-child) {
+.team-list__card:not(:last-child) {
   margin-right: 30px;
 }
-.team-card-text {
+.team-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -530,7 +531,7 @@ textarea::placeholder {
   align-items: center;
   gap: 10px;
 }
-.social-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,15 +546,15 @@ textarea::placeholder {
   transition-delay: 0;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent);
 }
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: var(--main-background-color);
 }
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
 /* Клієнти */
